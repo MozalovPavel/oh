@@ -7,7 +7,7 @@ const session = require('express-session');
 const favicon = require('serve-favicon');
 const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
-const sessionStore = require('./libs/sessionStore');
+// const sessionStore = require('./libs/sessionStore');
 
 const index = require('./routes/index');
 const login = require('./routes/login');
@@ -28,11 +28,11 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 
 // сессии для авторизации
-app.use(session(Object.assign({
-    store: sessionStore,
-    resave: false,
-    saveUninitialized: false
-}, config.get('session'))));
+// app.use(session(Object.assign({
+//     store: sessionStore,
+//     resave: false,
+//     saveUninitialized: false
+// }, config.get('session'))));
 
 app.use(express.static(path.join(__dirname, 'public')));
 
