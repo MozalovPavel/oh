@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= blocks.title %></title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="/stylesheets/link.css"/>
+    <link rel="stylesheet" href="/stylesheets/button.css"/>
+    <link rel="stylesheet" href="/stylesheets/checkbox.css"/>
+    <link rel="stylesheet" href="/stylesheets/header.css"/>
+    <link rel="stylesheet" href="/stylesheets/footer.css"/>
+    <link rel="stylesheet" href="/stylesheets/form.css"/>
+    <link rel="stylesheet" href="/stylesheets/login.css"/>
+    <link rel="stylesheet" href="/stylesheets/new-ad.css"/>
+    <link rel="stylesheet" href="/stylesheets/logo.css"/>
+    <link rel="stylesheet" href="/stylesheets/page.css"/>
+    <link rel="stylesheet" href="/stylesheets/ads.css"/>
+    <link rel="stylesheet" href="/stylesheets/ad.css"/>
+</head>
+<body>
+    <section class="page__wrapper">
+        <%-partial('../partials/header')%>
+        <main>
+            <%- body -%>
+        </main>
+        <%-partial('../partials/footer')%>
+    </section>
+</body>
+</html>

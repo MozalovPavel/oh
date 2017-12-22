@@ -1,0 +1,91 @@
+.ads
+{
+    display: grid;
+
+    padding: 0;
+
+    list-style: none;
+
+    grid-template-columns: 1fr 1fr 1fr 1fr auto;
+}
+
+.ads__item
+{
+    position: relative;
+
+    display: inline-block;
+
+    width: 206px;
+    height: 281px;
+    margin-bottom: 25px;
+
+    background-color: #fff;
+}
+
+.ads__image
+{
+    position: relative;
+
+    width: 205px;
+    height: 205px;
+    margin: 0;
+
+    border-bottom: 1px solid #2adede;
+}
+
+.ads__status
+{
+    line-height: 20px;
+
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+
+    height: 20px;
+    padding: 0 14px;
+
+    color: #fff;
+    background-color: #29dddd;
+}
+
+.ads__info
+{
+    margin: 10px 20px;
+}
+
+.ads__name
+{
+    font-size: 20px;
+    font-weight: 900;
+
+    display: block;
+}
+
+.ads__price
+{
+    display: block;
+
+    margin-top: 10px;
+}
+
+.ads__link
+{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    display: block;
+
+    transition: all .3s ease;
+
+    opacity: 0;
+    background-color: #000;
+}
+
+.ads__link:hover
+{
+    opacity: .1;
+}

@@ -1,0 +1,19 @@
+<header class="header">
+    <div class="header__inner">
+        <figure class="logo">
+            <img class="logo__image" src="/images/logo.png" alt="Изображение логотипа">
+            <figcaption class="logo__name">Oh</figcaption>
+            <a class="link logo__link" href="/"></a>
+        </figure>
+        <div class="header__btn-group">
+            <a class="button header__create-ad" href="/ad/new">Создать объявление</a>
+            <a class="button header__login" href="/signin">
+                <% if (isLogin) { %>
+                    Выйти
+                <% } else { %>
+                    Войти
+                <% } %>
+            </a>
+        </div>
+    </div>
+</header>

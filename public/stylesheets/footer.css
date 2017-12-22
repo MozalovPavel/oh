@@ -1,0 +1,39 @@
+.footer
+{
+    display: flex;
+
+    width: 100%;
+    min-width: 1090px;
+    height: 122px;
+
+    background-color: #fff;
+
+    justify-content: center;
+}
+
+.footer__inner
+{
+    position: relative;
+
+    display: flex;
+
+    width: 1170px;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__contact
+{
+    height: 20px;
+}
+
+.footer__phone
+{
+    margin-left: 10px;
+}
+
+.footer__email
+{
+    margin-left: 6px;
+}

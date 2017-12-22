@@ -1,0 +1,64 @@
+.form
+{
+    display: flex;
+
+    width: 700px;
+    margin: 0 auto;
+
+    background-color: #fff;
+    box-shadow: 0 0 25px #c1b6b6;
+
+    justify-content: center;
+}
+
+.form__input-group
+{
+    display: flex;
+    flex-direction: column;
+
+    padding: 30px;
+
+    border: none;
+}
+
+.form__input
+{
+    font-size: 18px;
+
+    box-sizing: border-box;
+    width: 250px;
+    margin-bottom: 20px;
+    padding: 5px 10px;
+
+    border: 2px solid #009ea8;
+}
+
+.form__btn-group
+{
+    display: flex;
+
+    justify-content: space-between;
+}
+
+.form__button
+{
+    width: 130px;
+}
+
+.form__link
+{
+    margin-right: 20px;
+
+    align-self: center;
+}
+
+.form__image-btn
+{
+    width: 100%;
+}
+
+.form__textarea
+{
+    min-width: 250px;
+    max-width: 250px;
+}

@@ -1,0 +1,35 @@
+<% layout('/layout/page')  -%>
+<% block('title', ' Объявление') -%>
+
+<div class="page">
+    <article class="form ad">
+        <h2 class="ad__title"><%= name %></h2>
+        <div class="ad__content">
+            <img class="ad__image" src="/images/default-image.png">
+            <div class="ad__info">
+                <div class="ad__description">
+                    <span class="ad__description-title">Описание</span>
+                    <p class="ad__text"><%= description %></p>
+                </div>
+                <div class="ad__rows">
+                    <div class="ad__row">
+                        <span class="ad__row-title">Тип объявления</span>
+                        <span class="ad__row-value"><%= status %></span>
+                    </div>
+                    <div class="ad__row">
+                        <span class="ad__row-title">Цена</span>
+                        <span class="ad__row-value"><%= price %></span>
+                    </div>
+                    <div class="ad__row">
+                        <span class="ad__row-title">Телефон</span>
+                        <span class="ad__row-value"><%= phone %></span>
+                    </div>
+                    <div class="ad__row">
+                        <span class="ad__row-title">Владелец</span>
+                        <span class="ad__row-value"><%= owner %></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+</div>

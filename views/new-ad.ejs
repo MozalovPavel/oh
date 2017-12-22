@@ -1,0 +1,22 @@
+<% layout('/layout/page')  -%>
+<% block('title', 'Новое объявление') -%>
+
+<div class="page new-ad">
+    <h1 class="page__title new-ad__title">Авторизация</h1>
+    <form class="login__form form" action="/api/new-ad/add" method="post">
+        <fieldset class="form__input-group">
+            <input class="form__input" type="text" name="name" value="" placeholder="Название *">
+            <textarea class="form__input form__textarea" name="description" placeholder="Описание"></textarea>
+            <input class="form__input" type="text" name="price" value="" placeholder="Цена">
+            <div class="checkbox">
+                <span class="checkbox__text">Купить</span>
+                <input type="checkbox" name="isSell" class="checkbox__input">
+                <span class="checkbox__text">Продать</span>
+            </div>
+            <button class="new-ad__button button" type="button">Загрузить картинку</button>
+            <div class="form__btn-group">
+                <button class="form__button new-ad__button button" type="submit" name="button">Опубликовать</button>
+            </div>
+        </fieldset>
+    </form>
+</div>

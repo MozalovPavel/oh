@@ -1,0 +1,14 @@
+{
+  "mongoose": {
+    "uri": "mongodb://localhost/oh"
+  },
+  "session": {
+    "secret": "secret_key",
+    "key": "cid",
+    "cookie": {
+      "path": "/",
+      "httpOnly": true,
+      "maxAge": null
+    }
+  }
+}

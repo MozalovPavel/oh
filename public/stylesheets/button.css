@@ -1,0 +1,30 @@
+.button
+{
+    font: 20px 'Arial';
+    line-height: 35px;
+
+    display: inline-block;
+
+    height: 35px;
+    padding: 0 15px;
+
+    transition: all .3s ease 0s;
+    text-decoration: none;
+
+    color: #fff;
+    border: none;
+    outline: none;
+    background-color: #29dddd;
+}
+
+.button:hover
+{
+    cursor: pointer;
+
+    background-color: #2cf1f1;
+}
+
+.button:active
+{
+    background-color: #29dddd;
+}

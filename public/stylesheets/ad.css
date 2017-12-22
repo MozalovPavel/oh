@@ -1,0 +1,67 @@
+.ad
+{
+    display: block;
+
+    width: 900px;
+    padding: 50px;
+}
+
+.ad__title
+{
+    margin-top: 0;
+}
+
+.ad__image
+{
+    width: 300px;
+    height: 300px;
+
+    border: 1px solid #2adede;
+    border-radius: 3px;
+
+    flex: 0 0 300px;
+}
+
+.ad__content
+{
+    display: flex;
+}
+
+.ad__info
+{
+    display: flex;
+    flex-direction: column;
+
+    margin-left: 50px;
+
+    justify-content: space-between;
+}
+
+.ad__row-title,
+.ad__description-title
+{
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.ad__row-title
+{
+    display: inline-block;
+
+    width: 165px;
+}
+
+.ad__row-value
+{
+    margin-left: 10px;
+}
+
+.ad__row
+{
+    margin-top: 10px;
+}
+
+.ad__row:first-child
+{
+    margin-top: 0;
+}

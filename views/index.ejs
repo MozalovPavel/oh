@@ -1,0 +1,30 @@
+<% layout('/layout/page')  -%>
+<% block('title', 'Главная') -%>
+
+<div class="page">
+    <h1 class="page__title">Все объявления</h1>
+    <ul class="ads">
+        <% for(var i = 0; i < ads.length; i++) { %>
+        <li class="ads__item">
+            <a class="ads__link" href="/ad/<%= ads[i].id %>"></a>
+            <article class="ads__inner">
+                <div class="ads__image">
+                    <img src="/images/default-image.png" alt="Карточка">
+                    <span class="ads__status">
+                        <%= ads[i].status %>
+                    </span>
+                </div>
+                <div class="ads__info">
+                    <span class="ads__name">
+                        <%= ads[i].name %>
+                    </span>
+                    <span class="ads__price">
+                        <%= ads[i].price %> &#8381;
+                    </span>
+                </div>
+            </article>
+        </li>
+        <% } %>
+    </ul>
+</div>
+
